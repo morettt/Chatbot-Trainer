@@ -36,9 +36,16 @@ pip install -r requirements.txt
 git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
 ```
 
-# 模型推理测试
-尝试推理模型，确认推理成功：
+打开run.py文件，找到这行代码：MODEL_PATH = os.environ.get('MODEL_PATH', '模型路径')
+将其中的“模型路径”替换为你刚刚下载的glm-4-9b-chat模型的绝对路径。并保存
 
+
+# 模型推理测试
+
+测试是否可以推理成功：
+```
+python run.py
+```
 ## 训练步骤
 
 首先，数据集制作分为两种格式：传统问答对格式和“半”监督格式。
