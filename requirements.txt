@@ -1,0 +1,37 @@
+# use vllm
+# vllm>=0.5.0
+
+torch>=2.3.0
+torchvision>=0.18.0
+transformers==4.40.0
+huggingface-hub>=0.23.1
+sentencepiece>=0.2.0
+pydantic>=2.7.1
+timm>=0.9.16
+tiktoken>=0.7.0
+accelerate>=0.30.1
+sentence_transformers>=2.7.0
+
+# web demo
+gradio>=4.33.0
+
+# openai demo
+openai>=1.31.1
+einops>=0.7.0
+sse-starlette>=2.1.0
+
+# INT4
+bitsandbytes>=0.43.1
+
+# PEFT model, not need if you don't use PEFT finetune model.
+# peft>=0.11.0
+
+jieba>=0.42.1
+datasets>=2.19.1
+peft>=0.11.0
+deepspeed>=0.13.3
+nltk==3.8.1
+ruamel.yaml
+rouge_chinese
+
+codewithgpu
