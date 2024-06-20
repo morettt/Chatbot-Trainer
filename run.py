@@ -22,7 +22,7 @@ def load_model_and_tokenizer(model_dir: Union[str, Path], trust_remote_code: boo
     )
     return model, tokenizer
 
-MODEL_PATH = os.environ.get('MODEL_PATH', '/root/Chatbot-Trainer/output/checkpoint-1000')
+MODEL_PATH = os.environ.get('MODEL_PATH', '你的模型路径')
 model, tokenizer = load_model_and_tokenizer(MODEL_PATH)
 
 os_name = platform.system()
