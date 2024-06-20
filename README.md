@@ -20,12 +20,12 @@ markdown
 ### 创建虚拟环境
 
 #### Linux:
-```bash
+```
 conda create -n Chatbot-Trainer python=3.10 -y
 source activate Chatbot-Trainer
-```bash
+```
 #### Windows:
 conda create -n Chatbot-Trainer python=3.10 -y
 conda activate Chatbot-Trainer
-```bash
+
 
