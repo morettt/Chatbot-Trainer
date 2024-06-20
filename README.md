@@ -31,7 +31,7 @@ cd Chatbot-Trainer
 pip install -r requirements.txt
 ```
 
-# 模型下载
+# 模型下载及移动
 ```
 git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git && mv glm-4-9b-chat models/
 ```
