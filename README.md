@@ -46,7 +46,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
 ```
 python run.py
 ```
-## 训练步骤
+## 开始训练
 
 首先，数据集制作分为两种格式：传统问答对格式和“半”监督格式。
 
