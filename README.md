@@ -28,3 +28,4 @@ source activate Chatbot-Trainer
 #### Windows:
 conda create -n Chatbot-Trainer python=3.10 -y
 conda activate Chatbot-Trainer
+
