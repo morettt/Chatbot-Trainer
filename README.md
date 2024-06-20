@@ -34,7 +34,6 @@ pip install -r requirements.txt
 # 模型下载
 ```
 git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git && mv glm-4-9b-chat models/
-
 ```
 
 # 模型推理测试
