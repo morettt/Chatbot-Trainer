@@ -40,7 +40,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
 将其中的“模型路径”替换为你刚刚下载的glm-4-9b-chat模型的绝对路径。并保存
 
 
-# 模型推理测试
+## 模型推理测试
 
 测试是否可以推理成功：
 ```
