@@ -106,6 +106,8 @@ python run.py
 
 ## 许可协议
 
++ 使用GLM-4 模型权重需要遵循 [模型协议](https://huggingface.co/THUDM/glm-4-9b/blob/main/LICENSE)。
+
 + 本开源仓库代码遵循 [Apache 2.0](LICENSE) 协议。
 
 
