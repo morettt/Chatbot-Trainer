@@ -46,7 +46,7 @@ git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
 ```
 python run.py
 ```
-## 开始训练
+## 训练
 
 首先，数据集制作分为两种格式：传统问答对格式和“半”监督格式。
 
@@ -86,14 +86,17 @@ python run.py
 python preprocessing.py
 ```
 
+# 开始训练
+
+
 **Linux系统**：
 ```
-python finetune.py  data/  /root/Chatbot-Trainer/glm-4-9b-chat  configs/lora.yaml
+python finetune.py  data/  glm-4-9b-chat  configs/lora.yaml
 ```
 
 **Windows系统**：
 ```
-python finetune.py  data\\  Chatbot-Trainer\\glm-4-9b-chat  Chatbot-Trainer\\configs\\lora.yaml
+python finetune.py  data\\  glm-4-9b-chat  configs\\lora.yaml
 ```
 
 # 推理
