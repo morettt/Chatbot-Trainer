@@ -1,71 +1,23 @@
+# LLM Chatbot Trainer (LCT)
 
+只为新手设计！LLM Chatbot Trainer (LCT) 是一个基于大型语言模型（LLM）的聊天机器人训练项目。使用 LCT，你可以轻松训练出一个模拟自己的聊天机器人，或模拟任何你感兴趣的人物，包括名人、历史人物、动漫角色或电影小说中的虚拟人物。
 
-#确保您机子CUDA和pytorch已正确安装。
+通过提供少量自己的聊天数据集，你可以快速训练出一个拥有高度仿真对话能力的聊天机器人。LCT 采用先进的机器学习算法，确保训练过程简单、高效，并生成自然流畅的对话。
 
-#创建虚拟环境
+## 项目特点
 
-Linux:
+- **易于使用**：专为新手设计的用户友好界面和详细的文档。
+- **高效训练**：只需少量聊天数据，即可快速生成高质量的聊天机器人。
+- **个性化**：能够训练出模拟你自己或任何其他现实或虚拟角色的聊天机器人。
+- **强大性能**：基于最新的 LLM 技术，确保生成的对话自然、流畅且具有高度的互动性。
 
+## 环境设置
+
+请确保你已经安装了 CUDA 和 PyTorch。
+
+### 创建虚拟环境
+
+#### Linux:
+```bash
 conda create -n Chatbot-Trainer python=3.10 -y
 source activate Chatbot-Trainer
-
-windows:
-
-conda create -n Chatbot-Trainer python=3.10 -y   
-conda activate Chatbot-Trainer
-
-#下载依赖
-cd role-training
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-
-
-#下载模型
-cg down xxxiu/glm-4-9b-chat
-
-尝试推理模型，观察是否可以推理成功：
-
-
-开始训练
-
-首先数据集制作分为两种，一种为传统的问答对格式。另一种为“半”监督格式。
-
-问答对格式示例：
-
-问：你叫什么？
-答：你管我叫什么？我叫xxx
-
-问：最近新出来了个电影，要去看吗？
-答：诶呀。外面太热了，不想出门。
-
-下面一种是“半”监督数据集
-
-问：你叫xxx，用这种说话方式和我对话
-答：你管我叫什么？我叫你xxx
-
-问：你叫xxx，用这种说话方式和我对话
-答：诶呀。外面太热了，不想出门。
-
-第二种数据集格式，测试实际上只比第一种质量下降10%~20%左右，十分省力。只要保证“答”的部分里面的内容是你自己的说话风格就行了。
-什么内容都可以。这里训练的主要就是你语言习惯。
-
-数据集数量至少得有70对，这是最基础训练的基准。
-
-将数据集保存好之后，即可开始训练，训练为全自动。无需手动配置参数：
-
-运行此指令处理数据集：
-
-python preprocessing.py
-
-linux:
-
-python finetune.py  data/  /root/Chatbot-Trainer/glm-4-9b-chat  configs/lora.yaml
-
-windows:
-
-python finetune.py  data\\  Chatbot-Trainer\\glm-4-9b-chat  Chatbot-Trainer\\configs\\lora.yaml
-
-
-推理
-
-python run.py
-
