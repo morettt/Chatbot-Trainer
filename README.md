@@ -24,8 +24,7 @@ markdown
 ```bash
 conda create -n Chatbot-Trainer python=3.10 -y
 source activate Chatbot-Trainer
-Windows:
-bash
-复制代码
+
+### Windows:
 conda create -n Chatbot-Trainer python=3.10 -y
 conda activate Chatbot-Trainer
