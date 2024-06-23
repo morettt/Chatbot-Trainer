@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 # 模型下载
 ```
-git clone https://www.modelscope.cn/ZhipuAI/glm-4-9b-chat.git
+cg down xxxiu/glm-4-9b-chat
 ```
 
 打开run.py文件，找到这行代码：MODEL_PATH = os.environ.get('MODEL_PATH', '模型路径')
