@@ -30,10 +30,6 @@ pip install codewithgpu
 cg down xxxiu/glm-4-9b-chat
 ```
 
-打开run.py文件，找到这行代码：MODEL_PATH = os.environ.get('MODEL_PATH', '模型路径')
-将其中的“模型路径”替换为你刚刚下载的glm-4-9b-chat模型的绝对路径。并保存
-
-
 ## 模型推理测试
 
 测试是否可以推理成功：
