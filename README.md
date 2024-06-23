@@ -28,7 +28,6 @@ conda activate Chatbot-Trainer
 
 # 依赖安装
 ```
-cd Chatbot-Trainer
 pip install -r requirements.txt
 ```
 
