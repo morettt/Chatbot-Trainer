@@ -8,7 +8,7 @@ max_output_length: 512
 training_args:
   # see `transformers.Seq2SeqTrainingArguments`
   output_dir: ./output
-  max_steps: 3000
+  max_steps: 1200
   # needed to be fit for the dataset
   learning_rate: 5e-4
   # settings for data loading
