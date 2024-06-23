@@ -20,6 +20,9 @@ source activate Chatbot-Trainer
 ```
 
 # 依赖安装
+
+确保你终端的路径在Chatbot-Trainer下
+
 ```
 pip install -r requirements.txt
 ```
