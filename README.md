@@ -34,6 +34,7 @@ pip install -r requirements.txt
 
 # 模型下载
 ```
+pip install codewithgpu
 cg down xxxiu/glm-4-9b-chat
 ```
 
