@@ -14,16 +14,9 @@ PyTochy建议2.0.0以上
 
 ### 创建虚拟环境
 
-#### 对于Linux用户：
 ```
 conda create -n Chatbot-Trainer python=3.10 -y
 source activate Chatbot-Trainer
-```
-
-#### 对于Windows用户：
-```
-conda create -n Chatbot-Trainer python=3.10 -y
-conda activate Chatbot-Trainer
 ```
 
 # 依赖安装
@@ -90,15 +83,10 @@ python preprocessing.py
 # 开始训练
 
 
-**Linux系统**：
 ```
 python finetune.py  data/  glm-4-9b-chat  configs/lora.yaml
 ```
 
-**Windows系统**：
-```
-python finetune.py  data\\  glm-4-9b-chat  configs\\lora.yaml
-```
 
 # 推理
 ```
