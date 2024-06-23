@@ -38,7 +38,7 @@ cg down xxxiu/glm-4-9b-chat
 
 测试是否可以推理成功：
 ```
-python run.py
+python test.py
 ```
 ## 训练
 
