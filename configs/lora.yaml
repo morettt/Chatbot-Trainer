@@ -25,7 +25,7 @@ training_args:
   # settings for evaluation
   per_device_eval_batch_size: 4
   evaluation_strategy: steps
-  eval_steps: 500
+  eval_steps: 50000
   # settings for optimizer
   # adam_epsilon: 1e-6
   # uncomment the following line to detect nan or inf values
