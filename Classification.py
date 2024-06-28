@@ -9,7 +9,7 @@ def classify_answer(answer):
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo-1106",
         messages=[
-            {"role": "system", "content": "你是一个情感分析助手，请根据以下句子进行分类，别说多余的话，只需输入：过于暴躁、可爱撒娇、温柔体贴。"},
+            {"role": "system", "content": "你是一个情感分析助手，请根据以下句子进行分类，别说多余的话，只需输入：激动、正常、温柔。"},
             {"role": "user", "content": answer}
         ]
     )
@@ -20,9 +20,9 @@ def process_file(input_file_path, output_file_base):
         lines = file.readlines()
 
     results = {
-        "过于暴躁": [],
-        "可爱撒娇": [],
-        "温柔体贴": []
+        "激动": [],
+        "正常": [],
+        "温柔": []
     }
 
     # 每三行处理一次
@@ -46,8 +46,8 @@ def process_file(input_file_path, output_file_base):
             file.writelines(content)
 
 # 示例文件路径和环境变量设置
-input_file_path = r'C:\Users\救赎\Desktop\灵隐\语气分类\实验\灵隐试验.txt'
-output_file_base = r'C:\Users\救赎\Desktop\灵隐\语气分类\实验\灵隐试验分类'
+input_file_path = '试验.txt'
+output_file_base = '分类'
 
 # 处理文件
 process_file(input_file_path, output_file_base)
