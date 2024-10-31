@@ -1,0 +1,9 @@
+fastapi==0.104.1
+uvicorn==0.24.0.post1
+requests
+modelscope==1.9.5
+transformers==4.41.2
+streamlit==1.24.0
+sentencepiece==0.1.99
+accelerate==0.24.1
+tiktoken==0.7.0
