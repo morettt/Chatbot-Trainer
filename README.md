@@ -9,4 +9,5 @@
 conda create -n Chatbot-Trainer python=3.10 -y      
 source activate Chatbot-Trainer
 
-然后，你得
+然后，
+抱歉，我突然不想写了，等我之后心情好了再来写。
